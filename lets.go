@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "fmt" // "Format package"
 
 func main() {
 	fmt.Print("Let's Go!")
@@ -27,16 +27,28 @@ func main() {
 
 	// Data types
 	var password string
-	password = "secret"
 
+	fmt.Println("it's a", password)
+
+	password = "secret"
 	fmt.Println("it's a", password)
 
 	hobby := "coding"
 	fmt.Println(hobby)
 
 
+	// Formatted print
+	fmt.Printf("The value of variable \"name\" is \"%v\", data type is %T\n", name, name)
+	// - can use %v for value, %T for data type
+	// - or can use C-style formatted for correct data type e.g. %s for string..., %d for int 
+	fmt.Printf("Age: %d", age)
+
+
 	// User input
-	fmt.Print("Enter new username: ")
-	fmt.Scan(&username)
-	fmt.Println("New username:", username)
+	// fmt.Print("Enter new username: ")
+	// fmt.Scan(&username)
+	// fmt.Println("New username:", username)
+
 }
+
+
