@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	// - loops are simplified in Go
@@ -9,7 +12,14 @@ func main() {
 	// - a for loop without condition is a while loop
 	// infiniteLoop()
 
-	growingArray()
+	// growingArray()
+
+	// split string with strings.Fields(), import from "strings" pkg
+	// - white space as separator
+	// - return a slice
+
+	games := strings.Fields("lienminh overwatch")
+	fmt.Printf("Games: %v", games)
 
 
 }
