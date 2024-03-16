@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// Arrays
-	// arrays in Go are fixed size
+	// arrays in Go are FIXED size
 
 	var programmingLanguages [50]string // declare an empty string array of size 50
 
@@ -27,8 +27,9 @@ func main() {
 
 	// Slices
 	// - an abstraction of arrays
-	// - uses array under the hood, but has dynamic size
-	// same syntax as array, just dont define size :/
+	// - uses array under the hood, but has DYNAMIC size
+	// - same syntax as array, just dont define size :/
+	
 	var games []string 
 	// - can also use syntax: 
 		// - var games = []string{} 

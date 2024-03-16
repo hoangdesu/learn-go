@@ -12,16 +12,17 @@ func main() {
 	// - a for loop without condition is a while loop
 	// infiniteLoop()
 
-	// growingArray()
+	growingArray()
 
 	// split string with strings.Fields(), import from "strings" pkg
 	// - white space as separator
 	// - return a slice
 
 	games := strings.Fields("lienminh overwatch")
-	fmt.Printf("Games: %v", games)
+	fmt.Printf("\nGames: %v", games)
 
-
+	// blank identifier: _ (underscore)
+	// 	- ignore a var
 }
 
 func infiniteLoop() {
@@ -48,12 +49,15 @@ func growingArray() {
 			fmt.Printf("index: %v, food: %v\n", index, food)
 		}
 
+		// range returns 2 values: index, sliceElement
+
 		var newFood string
 		fmt.Print("\nEnter a new food: ")
 		fmt.Scan(&newFood)
 
 		if newFood == "bye" {
 			fmt.Println("Bye!")
+			fmt.Printf("Final food slice: %v", foods)
 			break
 		} else {
 			foods = append(foods, newFood)
