@@ -64,6 +64,7 @@ func growingArray() {
 			fmt.Printf("Final food slice: %v", foods)
 			break
 		} else {
+			// append(list, item), remember to update the list after appending
 			foods = append(foods, newFood)
 		}
 	}
