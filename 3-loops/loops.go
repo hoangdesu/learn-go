@@ -12,17 +12,21 @@ func main() {
 	// - a for loop without condition is a while loop
 	// infiniteLoop()
 
-	growingArray()
+	// growingArray()
 
 	// split string with strings.Fields(), import from "strings" pkg
 	// - white space as separator
 	// - return a slice
 
-	games := strings.Fields("lienminh overwatch")
-	fmt.Printf("\nGames: %v", games)
+	// games := strings.Fields("lienminh overwatch")
+	// fmt.Printf("\nGames: %v\n", games)
 
 	// blank identifier: _ (underscore)
 	// 	- ignore a var
+
+	// whileLoop()
+
+	validateInput()
 }
 
 func infiniteLoop() {
@@ -64,3 +68,36 @@ func growingArray() {
 		}
 	}
 }
+
+func whileLoop() {
+	// - for loop with condition == while loop
+	i := 1
+	for i < 10 {
+		fmt.Println(i);
+		i++;
+	}
+}
+
+func validateInput() {
+	for {
+		fmt.Print("Enter email address: ")
+		var email string
+		fmt.Scan(&email)
+
+		// check if string is missing character @
+		if !strings.Contains(email, "@") {
+			fmt.Println("Invalid email format")
+			continue
+		} else {
+			fmt.Printf("Welcome %v!\n", email)
+			break
+		}
+	}
+}
+
+// - continue: skip the remaining code
+// - break: quit the loop
+// && AND
+// || OR
+// ! NOT
+// for true == while true
