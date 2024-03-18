@@ -26,7 +26,13 @@ func main() {
 
 	// whileLoop()
 
-	validateInput()
+	// validateInput()
+
+	// traditional for loop
+	for i := 0; i < 10; i++ {
+		fmt.Printf("%v ", i)
+	}
+
 }
 
 func infiniteLoop() {
