@@ -71,5 +71,7 @@ func main() {
 		totalTickets -= int(tickets)
 		fmt.Printf("User %v booked %v tickets. %v tickets remaining\n", username, tickets, totalTickets)
 	}
-
 }
+
+// go run lets.go
+// go run .
